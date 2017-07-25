@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoadingViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    LoadingViewController *loading = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
+    self.window.rootViewController = loading;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

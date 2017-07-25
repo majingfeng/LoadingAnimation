@@ -13,6 +13,11 @@
 		638C705B1F273135006E49A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638C70591F273135006E49A6 /* Main.storyboard */; };
 		638C705D1F273135006E49A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C705C1F273135006E49A6 /* Assets.xcassets */; };
 		638C70601F273135006E49A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638C705E1F273135006E49A6 /* LaunchScreen.storyboard */; };
+		638C706A1F27314E006E49A6 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C70681F27314E006E49A6 /* LoadingViewController.m */; };
+		638C706B1F27314E006E49A6 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638C70691F27314E006E49A6 /* LoadingViewController.xib */; };
+		638C70731F2731CC006E49A6 /* MJFActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C706E1F2731CC006E49A6 /* MJFActivityIndicatorView.m */; };
+		638C70741F2731CC006E49A6 /* MJFCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C70701F2731CC006E49A6 /* MJFCircleButton.m */; };
+		638C70751F2731CC006E49A6 /* MJFLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C70721F2731CC006E49A6 /* MJFLoadingAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		638C705C1F273135006E49A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		638C705F1F273135006E49A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638C70611F273135006E49A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638C70671F27314E006E49A6 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		638C70681F27314E006E49A6 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		638C70691F27314E006E49A6 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		638C706D1F2731CC006E49A6 /* MJFActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFActivityIndicatorView.h; sourceTree = "<group>"; };
+		638C706E1F2731CC006E49A6 /* MJFActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFActivityIndicatorView.m; sourceTree = "<group>"; };
+		638C706F1F2731CC006E49A6 /* MJFCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFCircleButton.h; sourceTree = "<group>"; };
+		638C70701F2731CC006E49A6 /* MJFCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFCircleButton.m; sourceTree = "<group>"; };
+		638C70711F2731CC006E49A6 /* MJFLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFLoadingAnimationView.h; sourceTree = "<group>"; };
+		638C70721F2731CC006E49A6 /* MJFLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFLoadingAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		638C704F1F273135006E49A6 /* MJFLoadAnimatingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				638C706C1F2731CC006E49A6 /* MJFLoading */,
 				638C70531F273135006E49A6 /* AppDelegate.h */,
 				638C70541F273135006E49A6 /* AppDelegate.m */,
 				638C70561F273135006E49A6 /* ViewController.h */,
@@ -67,6 +82,9 @@
 				638C705E1F273135006E49A6 /* LaunchScreen.storyboard */,
 				638C70611F273135006E49A6 /* Info.plist */,
 				638C70501F273135006E49A6 /* Supporting Files */,
+				638C70671F27314E006E49A6 /* LoadingViewController.h */,
+				638C70681F27314E006E49A6 /* LoadingViewController.m */,
+				638C70691F27314E006E49A6 /* LoadingViewController.xib */,
 			);
 			path = MJFLoadAnimatingDemo;
 			sourceTree = "<group>";
@@ -77,6 +95,19 @@
 				638C70511F273135006E49A6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		638C706C1F2731CC006E49A6 /* MJFLoading */ = {
+			isa = PBXGroup;
+			children = (
+				638C706D1F2731CC006E49A6 /* MJFActivityIndicatorView.h */,
+				638C706E1F2731CC006E49A6 /* MJFActivityIndicatorView.m */,
+				638C706F1F2731CC006E49A6 /* MJFCircleButton.h */,
+				638C70701F2731CC006E49A6 /* MJFCircleButton.m */,
+				638C70711F2731CC006E49A6 /* MJFLoadingAnimationView.h */,
+				638C70721F2731CC006E49A6 /* MJFLoadingAnimationView.m */,
+			);
+			path = MJFLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,7 @@
 				638C70601F273135006E49A6 /* LaunchScreen.storyboard in Resources */,
 				638C705D1F273135006E49A6 /* Assets.xcassets in Resources */,
 				638C705B1F273135006E49A6 /* Main.storyboard in Resources */,
+				638C706B1F27314E006E49A6 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638C70731F2731CC006E49A6 /* MJFActivityIndicatorView.m in Sources */,
 				638C70581F273135006E49A6 /* ViewController.m in Sources */,
 				638C70551F273135006E49A6 /* AppDelegate.m in Sources */,
 				638C70521F273135006E49A6 /* main.m in Sources */,
+				638C70751F2731CC006E49A6 /* MJFLoadingAnimationView.m in Sources */,
+				638C706A1F27314E006E49A6 /* LoadingViewController.m in Sources */,
+				638C70741F2731CC006E49A6 /* MJFCircleButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
